@@ -1,0 +1,160 @@
+EXO 1
+______
+AlGORITHME maSequence
+{Instructions séquentielles}
+
+CONSTANTE SEUIL:réel<-13.25
+
+VARIABLE    valA, valB:réel
+            compteur:entier
+            mot, tom:chaînes
+DEBUT
+    valA<-0.56
+    valB<-valA
+    valA<-valA x (10.5 + SEUIL)
+    compteur<-1
+    compteur<-compteur + 10
+    mot<-"Bonjour"
+    tom<-"Au revoir !"
+FIN
+___
+
+0.56*23.75
+13.3
+
+
+A=13.3
+B=0.56
+C=11
+----------------
+Exo 2
+_____
+AlGORITHME echangeValeur
+{echange les Valeur de deux variable}
+
+VARIABLE    valA, valB:réel
+
+DEBUT  
+    afficher ("donnez deux valeur")
+    saisire(valA, valB)
+
+    afficher("vous avez entré : ", valA "et", valB)
+
+    valA<-valB
+    valB<-valA
+
+    afficher("Mintenant vos données sont :", valA, "et ", valB)
+FIN
+
+Que devrait faire cet algorithme ?
+Que fait cet algorithme ?
+
+cette algo devrait : transformer valA en valB et valB en valA
+que fait cette algo : l'algo donne les deux même valeur car 
+
+exemple completer:
+DEBUT  
+    afficher("donnez deux valeur")
+    saisire(1, 2)
+
+    afficher("vous avez entré : ", 1 "et", 2)
+
+    1<-2
+    2<-1
+
+    afficher("Mintenant vos données sont :", valA=1, "et ", valB=1)
+FIN
+-----------------
+Exo 3
+____
+AlGORITHME echangeValeur
+{echange les Valeur de deux variable}
+
+VARIABLE    valA, valB:réel, valC
+
+DEBUT  
+    afficher("donnez deux valeur")
+    saisire(valA, valB)
+
+    afficher("vous avez entré : ", valA "et", valB)
+
+    valC<-valA
+    valA<-valB
+    valB<-valC
+
+    afficher("Mintenant vos données sont :", valA, "et ", valB)
+FIN
+-----------------
+Les Condition 
+_____
+
+<   Plus petit que
+
+>   Plus grand que
+
+<=  Plus petit ou egale a
+
+>=  Plus grand ou egal a
+
+=   Egale a
+
+!=  Different de
+-----------------
+Exo 4
+__
+
+AlGORITHME condtionImbriqué
+{condition}
+
+VARIABLE    mantionA, mentionB, mantionC
+
+mantionA <- 12
+mantionB <- 10
+
+
+SI <- mantionA >= 12 ALORS     
+
+DEBUT
+    AFFICHER("Mettre une Note")
+    SAISIRE(mantionC)
+    
+    SI mantionA >= 12 ALORS mantionB
+    mantionB
+    mantionB >= 10 OU mantionB <=12
+    alors 
+FIN
+__
+corection 
+__
+AlGORITHME condtionImbriqué
+{afficher un text en fonction de la note}
+
+VARIABLES not:entier
+
+DEBUT
+    SI note >= 12 ALORS
+            afficher("Reçu mention assez bien")
+        SINON
+            SI note > 10 ALORS
+                afficher("Reçu mention passable")
+        SINON
+            afficher("insuffisant")
+        FIN SI
+    FIN SI
+FIN
+_________
+correction IA
+__
+Algorithme mention
+    note: réel
+    Afficher "Entrez la note : "
+    Saisir note
+    Si note >= 12 Alors
+        Afficher "Reçu avec mention Assez Bien"
+    Sinon Si note > 10 et note < 12 Alors
+        Afficher "Reçu avec mention Passable"
+    Sinon
+        Afficher "Insuffisant"
+    Fin Si
+Fin Algorithme
+-----------------------------
